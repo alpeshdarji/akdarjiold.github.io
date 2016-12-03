@@ -29,13 +29,30 @@
 		}
 		.intro-text-main
 		{
-			text-transform: capitalize!important;
 			color: #2C3E50!important;
+			text-transform: capitalize!important;
 			font-family: arizonia!important;	
+			font-weight: 500!important;	
+		}
+		.top-font{
+			color: white!important;
+			text-transform: capitalize!important;
+			font-family: arizonia!important;
+			font-size: 35px!important;	
 			font-weight: 500!important;	
 		}
 		.mycolor{
 			color: #2C3E50!important;
+		}
+		.portfolio-item .portfolio-link .caption {
+		    background: rgba(254,254,254,.8) !important;
+		    position: absolute;
+		    width: 100%;
+		    height: 100%;
+		    opacity: 0;
+		    transition: all ease .5s;
+		    -webkit-transition: all ease .5s;
+		    -moz-transition: all ease .5s;
 		}
 
     </style>
@@ -58,7 +75,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">Alpesh Darji</a>
+                <a class="navbar-brand top-font" href="#page-top">Alpesh Darji</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -100,7 +117,7 @@
     </header>
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+   <!--  <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -171,7 +188,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- About Section -->
     <section class="success" id="about">
@@ -182,9 +199,16 @@
                     <hr class="star-light">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Alpesh Darji. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+            <div class="row" id="portfolio">
+                <div class="col-lg-4 col-lg-offset-2 portfolio-item ">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="mycolor fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
+                    </a>
                 </div>
                 <div class="col-lg-4">
                     <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
@@ -284,7 +308,7 @@
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
+                        <h3>About </h3>
                         <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Alpesh Darji</a>.</p>
                     </div>
                 </div>
@@ -294,7 +318,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Your Website 2016
+                        Copyright &copy; Alpesh Darji 2016
                     </div>
                 </div>
             </div>
